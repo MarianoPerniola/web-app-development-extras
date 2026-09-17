@@ -1,0 +1,53 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 0.7rem;
+    font-style: normal;
+}
+
+.aviso-grupo {
+    display: grid;
+    grid-template-columns: 20px 150px;
+    grid-template-rows: auto 3fr 50px;
+    /* The text appearing and dissapearing moved everything, so checkbox is used with fix sizes to avoid this */
+    grid-template-areas: 
+    "title title"
+    "checkbox checkboxText"
+    "confirmationMessage confirmationMessage";
+    justify-items: center;
+    align-items: center;
+}
+
+.aviso-grupo > h1 {
+    grid-area: title;
+}
+
+.aviso-grupo > input {
+    grid-area: checkbox;
+}
+
+.aviso-grupo > label {
+    grid-area: checkboxText;
+}
+
+.aviso-grupo > p {
+    grid-area: confirmationMessage;
+}
+
+/* por defecto esconder mensaje de terminos */
+.mensaje-confirmacion {
+    display: none;
+}
+
+#aceptar:checked ~ .mensaje-confirmacion {
+    display: block;
+}
