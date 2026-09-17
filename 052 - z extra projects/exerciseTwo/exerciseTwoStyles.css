@@ -1,0 +1,4 @@
+ul[href$=".pdf"] {
+    background-color: brown;
+    content: "(PDF)";
+}

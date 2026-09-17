@@ -17,7 +17,7 @@ h1 {
 .aviso-grupo {
     display: grid;
     grid-template-columns: 20px 150px;
-    grid-template-rows: auto 3fr 50px;
+    grid-template-rows: auto auto 50px;
     /* The text appearing and dissapearing moved everything, so checkbox is used with fix sizes to avoid this */
     grid-template-areas: 
     "title title"
