@@ -1,0 +1,17 @@
+/* por defecto esconder mensaje de terminos */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.mensaje-confirmacion {
+    display: none;
+}
+
+#aceptar:checked ~ .mensaje-confirmacion {
+    display: block;
+}
