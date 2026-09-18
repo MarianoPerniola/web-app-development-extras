@@ -1,4 +1,13 @@
-ul[href$=".pdf"] {
-    background-color: brown;
-    content: "(PDF)";
+a[href$=".pdf"]::after {
+    /* <a href="https://www.flaticon.com/free-icons/pdf" title="pdf icons">Pdf icons created by LAB Design Studio - Flaticon</a> */
+    content: " (PDF)";
+}
+
+a[href^="https"] {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 0.7rem;
+    font-style: normal;
 }
